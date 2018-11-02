@@ -1,0 +1,30 @@
+'''Create MySQL Server and Connect with C'''
+- Instal mysql server
+```
+sudo apt-get install mysql-server
+```
+- Connect to Server
+```
+sudo mysql -u root -p
+```
+```
+Enter Password;
+```
+Note: If you use sudo,password is blank so just press enter to login to database
+
+- Start Creating a Database
+```
+	CREATE DATABASE databasename
+	USE databasename
+```
+
+'''Intall C client'''
+```
+sudo apt-get install default-libmysqlclient-dev
+mysql_config --cflags
+mysql_config --cflags
+```
+- Compile file using 
+```
+gcc -o test  -L/usr/lib/mysql -lmysqlclient test.c
+```
